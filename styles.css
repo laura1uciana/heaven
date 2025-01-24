@@ -1,0 +1,153 @@
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  h1, a:hover {
+
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(239, 255, 233);
+ }
+
+
+
+ h2 {
+
+    color: white;
+    font-size: 5em;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+    text-align: center;
+    transform: translateY(50%);
+
+}
+
+
+/* Style for visited links */
+a:visited {
+    color: #0000FF; /* Purple color for visited links */
+}
+
+
+
+audio {
+    width: 50%; /* Make the audio player responsive */
+    max-width: 600px; /* Set a max width */
+    margin: 20px 0; /* Space around the audio player */
+    align-items: center;
+    justify-content: center;
+}
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2); /* Optional: Add background */
+    padding: 20px;
+    border-radius: 20px; /* Optional: Rounded corners */
+    width: 60%;
+}
+
+figcaption {
+    color: #fff; /* Optional: Set figcaption text color */
+    font-size: 3em; /* Optional: Adjust font size */
+    font-weight:700;
+}
+
+
+
+
+
+
+/* Basic styling for the dialog */
+dialog {
+  width: 60%;
+  max-width: 100%;
+  padding: 100%;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensures it's on top of everything else */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Close button styling */
+dialog button {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+dialog button:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 2em;
+  }
+ 
+.nav a {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    padding: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255), 0 0 40px rgb(242, 255, 0), 0 30px 30px rgb(232, 155, 11);
+  }
+ 
+.nav a:active {
+    transform: scale(1.2);
+  }
